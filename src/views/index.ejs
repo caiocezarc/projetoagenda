@@ -1,25 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
-</head>
+<div class="conteiner">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 my-3">
+      <h1 class="text-center">Agenda</h1>
+      <p class="text-center lead"> Seus contatos estão abaixo</p>
+      
+      <div class="row">
+        <div class="col my-3">
+          <div class="alert alert-danger">Um erro qualquer</div>
+        </div>
+      </div>
 
-<body>
+      <div class="responsive-table">
+        <table class="table my-3">
+          <tr>
+            <td>Caio</td>
+            <td>Cezar</td>
+            <td>8188399232</td>
+            <td>ciaorazec@gmail.com</td>
+          </tr>
+        </table>
+      </div>
 
-  <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <form action="/" method="POST">
-      <label>Cliente</label>
-      <input type="text" name="cliente">
-      <button>Submit</button>
-    </form>
-  </section>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
 
-  <script src="./assets/js/bundle.js"></script>
-</body>
-
-</html>
+<%- include('includes/footer') %>
