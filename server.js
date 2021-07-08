@@ -27,7 +27,6 @@ mongoose.connect(process.env.CONNECTIONSTRING, {useNewUrlParser: true, useUnifie
 
 app.use(helmet());
 
-
 //liberando o req.body
 app.use(express.urlencoded({extended: true}));
 
